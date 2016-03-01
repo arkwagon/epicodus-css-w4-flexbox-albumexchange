@@ -1,0 +1,13 @@
+.navWrapper {
+  display: flex;
+  justify-content: space-between;
+  .navLinks {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    li {
+      margin: 0 20px;
+    }
+  }
+}
