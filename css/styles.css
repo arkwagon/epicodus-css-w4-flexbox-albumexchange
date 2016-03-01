@@ -17,7 +17,14 @@ body {
   background-size: cover;
   background: -webkit-linear-gradient(black, red);
   background: linear-gradient(black, red);
-  height: 100%; }
+  height: 100vh; }
+  @media screen and (max-width: 805px) {
+    body {
+      height: 100%; } }
+
+@media screen and (max-width: 630px) {
+  .logo {
+    width: 100%; } }
 
 .navWrapper {
   display: flex;
@@ -33,6 +40,21 @@ body {
     list-style-type: none;
     align-items: center;
     color: white; }
+    @media screen and (max-width: 1150px) {
+      .navWrapper .navLinks {
+        padding-left: 0; } }
+    @media screen and (max-width: 630px) {
+      .navWrapper .navLinks {
+        flex-direction: column; } }
+    .navWrapper .navLinks a {
+      color: white;
+      text-decoration: none; }
+      .navWrapper .navLinks a:visited {
+        color: white;
+        text-decoration: none; }
+      .navWrapper .navLinks a:focus {
+        color: white;
+        text-decoration: none; }
     .navWrapper .navLinks li {
       margin: 0 10px;
       padding: 15px;
@@ -66,15 +88,9 @@ body {
     width: 550px;
     text-align: center;
     font-size: 1.2em; }
-  .header .searchBar {
-    width: 550px;
-    flex: 1;
-    display: flex; }
-    .header .searchBar input[type="text"] {
-      padding: 10px;
-      flex: 3; }
-    .header .searchBar button {
-      padding: 10px; }
+  @media screen and (max-width: 630px) {
+    .header p, .header .searchBar {
+      width: 100%; } }
 
 .siteWrapper {
   max-width: 80%;
@@ -82,6 +98,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media screen and (max-width: 630px) {
+    .siteWrapper {
+      max-width: 95%; } }
 
 .gallery {
   display: flex;
@@ -94,5 +113,44 @@ body {
   .gallery img {
     margin: .3em;
     box-shadow: 2px 2px 14px 0px rgba(0, 0, 0, 0.64); }
+
+.searchWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 650px; }
+  .searchWrapper p {
+    color: white;
+    margin-right: 8px; }
+  .searchWrapper .gallerySearch {
+    display: flex;
+    order: 1; }
+    .searchWrapper .gallerySearch input[type="text"] {
+      padding: 7px; }
+  .searchWrapper .sortBy {
+    display: flex;
+    align-items: center; }
+    .searchWrapper .sortBy select {
+      padding: 7px; }
+  .searchWrapper .showBy {
+    display: flex;
+    align-items: center; }
+    .searchWrapper .showBy select {
+      padding: 7px; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.searchBar {
+  width: 550px;
+  flex: 1;
+  display: flex; }
+  .searchBar input[type="text"] {
+    padding: 10px;
+    flex: 3; }
+  .searchBar button {
+    padding: 10px; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,5 @@
+// Homepage
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -10,9 +12,5 @@
   img {
     margin: .3em;
     box-shadow: 2px 2px 14px 0px rgba(0,0,0,0.64);
-    // @media screen and #{$tablet} {
-    //   width: 150px;
-    //   height: 150px;
-    // }
   }
 }

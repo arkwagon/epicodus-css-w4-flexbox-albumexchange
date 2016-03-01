@@ -1,0 +1,54 @@
+// Gallery List Page
+
+.searchWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  // border: 1px solid cyan;
+  width: 650px;
+  p {
+    color: white;
+    margin-right: 8px;
+  }
+  .gallerySearch {
+    display: flex;
+    order: 1;
+    input[type="text"] {
+      padding: 7px;
+    }
+  }
+  .sortBy {
+    display: flex;
+    align-items: center;
+    select {
+      padding: 7px;
+    }
+  }
+  .showBy {
+    display: flex;
+    align-items: center;
+    select {
+      padding: 7px;
+    }
+  }
+}
+
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+
+
+.searchBar {
+  width: 550px;
+  flex: 1;
+  display: flex;
+  input[type="text"] {
+    padding: 10px;
+    flex: 3;
+  }
+  button {
+    padding: 10px;
+  }
+}

@@ -10,16 +10,9 @@
     text-align: center;
     font-size: 1.2em;
   }
-  .searchBar {
-    width: 550px;
-    flex: 1;
-    display: flex;
-    input[type="text"] {
-      padding: 10px;
-      flex: 3;
-    }
-    button {
-      padding: 10px;
+  p, .searchBar {
+    @media screen and #{$mobile} {
+      width: 100%;
     }
   }
 }

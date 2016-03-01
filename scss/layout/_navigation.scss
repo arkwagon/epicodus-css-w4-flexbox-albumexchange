@@ -1,3 +1,9 @@
+.logo {
+  @media screen and #{$mobile} {
+    width: 100%;
+  }
+}
+
 .navWrapper {
   display: flex;
   justify-content: space-between;
@@ -12,6 +18,24 @@
     list-style-type: none;
     align-items: center;
     color: white;
+    @media screen and #{$smallDesktop} {
+      padding-left: 0;
+    }
+    @media screen and #{$mobile} {
+      flex-direction: column;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      &:visited {
+        color: white;
+        text-decoration: none;
+      }
+      &:focus {
+        color: white;
+        text-decoration: none;
+      }
+    }
     li {
       margin: 0 10px;
       padding: 15px;
