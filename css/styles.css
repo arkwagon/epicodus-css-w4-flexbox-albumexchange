@@ -114,11 +114,31 @@ body {
     margin: .3em;
     box-shadow: 2px 2px 14px 0px rgba(0, 0, 0, 0.64); }
 
+.galleryList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  color: white; }
+  .galleryList p {
+    margin: 0;
+    padding: 0; }
+  .galleryList .album {
+    font-weight: 500;
+    font-size: 1.2em; }
+  .galleryList .composer, .galleryList .size, .galleryList .postedBy {
+    font-size: .8em; }
+  .galleryList .galleryItem {
+    padding: 10px; }
+
 .searchWrapper {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 650px; }
+  font-size: 1.3em;
+  width: 750px;
+  padding-top: 50px;
+  padding-bottom: 30px; }
   .searchWrapper p {
     color: white;
     margin-right: 8px; }
@@ -126,16 +146,19 @@ body {
     display: flex;
     order: 1; }
     .searchWrapper .gallerySearch input[type="text"] {
+      font-size: 0.65em;
       padding: 7px; }
   .searchWrapper .sortBy {
     display: flex;
     align-items: center; }
     .searchWrapper .sortBy select {
+      font-size: 0.65em;
       padding: 7px; }
   .searchWrapper .showBy {
     display: flex;
     align-items: center; }
     .searchWrapper .showBy select {
+      font-size: 0.65em;
       padding: 7px; }
 
 select {

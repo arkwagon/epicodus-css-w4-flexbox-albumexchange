@@ -14,3 +14,27 @@
     box-shadow: 2px 2px 14px 0px rgba(0,0,0,0.64);
   }
 }
+
+// GALLERY PAGE
+
+.galleryList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  color: white;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .album {
+    font-weight: 500;
+    font-size: 1.2em;
+  }
+  .composer, .size, .postedBy {
+    font-size: .8em;
+  }
+  .galleryItem {
+    padding: 10px;
+  }
+}
