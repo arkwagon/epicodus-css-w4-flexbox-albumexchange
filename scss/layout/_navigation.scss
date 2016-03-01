@@ -1,13 +1,42 @@
 .navWrapper {
   display: flex;
   justify-content: space-between;
+  margin-top: 2em;
+  @media screen and #{$smallDesktop} {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .navLinks {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
     align-items: center;
+    color: white;
     li {
-      margin: 0 20px;
+      margin: 0 10px;
+      padding: 15px;
+      border: 1px solid transparent;
+      &:hover {
+        border: 1px solid white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.social {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  @media screen and #{$tablet} {
+    margin: 2em 0;
+  }
+  a {
+    font-size: 2em;
+    color: white;
+    &:hover {
+      color: black;
     }
   }
 }

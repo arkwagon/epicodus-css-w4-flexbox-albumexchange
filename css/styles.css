@@ -1,5 +1,5 @@
 body {
-  font-family: 'Arimo', sans-serif; }
+  font-family: 'Roboto Condensed', sans-serif; }
 
 *,
 *::before,
@@ -13,31 +13,60 @@ html, body {
   padding: 0; }
 
 body {
-  background-color: grey; }
+  font-weight: 300;
+  background-size: cover;
+  background: -webkit-linear-gradient(black, red);
+  background: linear-gradient(black, red);
+  height: 100%; }
 
 .navWrapper {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 2em; }
+  @media screen and (max-width: 1150px) {
+    .navWrapper {
+      flex-wrap: wrap;
+      justify-content: center; } }
   .navWrapper .navLinks {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    align-items: center; }
+    align-items: center;
+    color: white; }
     .navWrapper .navLinks li {
-      margin: 0 20px; }
+      margin: 0 10px;
+      padding: 15px;
+      border: 1px solid transparent; }
+      .navWrapper .navLinks li:hover {
+        border: 1px solid white;
+        cursor: pointer; }
+
+.social {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+  width: 200px; }
+  @media screen and (max-width: 805px) {
+    .social {
+      margin: 2em 0; } }
+  .social a {
+    font-size: 2em;
+    color: white; }
+    .social a:hover {
+      color: black; }
 
 .header {
-  border: 1px solid honeydew;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 25px; }
+  padding: 25px;
+  color: white; }
   .header p {
     width: 550px;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.2em; }
   .header .searchBar {
-    border: 1px solid red;
     width: 550px;
     flex: 1;
     display: flex; }
@@ -51,6 +80,19 @@ body {
   max-width: 80%;
   margin: 0 auto;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 650px; }
+  @media screen and (max-width: 805px) {
+    .gallery {
+      justify-content: space-around; } }
+  .gallery img {
+    margin: .3em;
+    box-shadow: 2px 2px 14px 0px rgba(0, 0, 0, 0.64); }
 
 /*# sourceMappingURL=styles.css.map */

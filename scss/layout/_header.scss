@@ -1,16 +1,16 @@
 .header {
-    border: 1px solid honeydew;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 25px;
+  color: white;
   p {
     width: 550px;
     text-align: center;
+    font-size: 1.2em;
   }
   .searchBar {
-    border: 1px solid red;
     width: 550px;
     flex: 1;
     display: flex;

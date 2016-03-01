@@ -14,5 +14,8 @@ html, body {
 
 body {
   @extend %bodyFont;
-  background-color: grey;
+  font-weight: 300;
+    background-size: cover;
+  @include background(linear-gradient(black, red));
+  height: 100%;
 }
