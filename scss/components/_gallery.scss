@@ -5,7 +5,6 @@
   flex-wrap: wrap;
   justify-content: center;
   max-width: 650px;
-  // border: 1px solid cyan;
   @media screen and #{$tablet} {
     justify-content: space-around;
   }
@@ -21,8 +20,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80%;
+  align-items: flex-start;
+  max-width: 100%;
   color: white;
+  .galleryItem {
+    padding: 10px;
+    align-items: center;
+    flex: 1;
+    @media screen and #{$smallDesktop} {
+      flex:0
+    }
+  }
   p {
     margin: 0;
     padding: 0;
@@ -33,8 +41,5 @@
   }
   .composer, .size, .postedBy {
     font-size: .8em;
-  }
-  .galleryItem {
-    padding: 10px;
   }
 }

@@ -8,3 +8,16 @@
     max-width: 95%;
   }
 }
+
+.galleryPageWrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex:1;
+  flex-direction: column;
+  align-items: center;
+  @media screen and #{$mobile} {
+    max-width: 95%;
+  }
+}

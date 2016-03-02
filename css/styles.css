@@ -12,13 +12,16 @@ html, body {
   margin: 0;
   padding: 0; }
 
+html {
+  height: 100%; }
+
 body {
   font-weight: 300;
+  height: 100vh;
+  background-image: url("../img/background.jpg");
   background-size: cover;
-  background: -webkit-linear-gradient(black, red);
-  background: linear-gradient(black, red);
-  height: 100vh; }
-  @media screen and (max-width: 805px) {
+  width: 100%; }
+  @media screen and (max-width: 1150px) {
     body {
       height: 100%; } }
 
@@ -34,6 +37,9 @@ body {
     .navWrapper {
       flex-wrap: wrap;
       justify-content: center; } }
+  @media screen and (max-width: 630px) {
+    .navWrapper {
+      flex-direction: column; } }
   .navWrapper .navLinks {
     display: flex;
     justify-content: space-between;
@@ -64,14 +70,14 @@ body {
         cursor: pointer; }
 
 .social {
-  margin-top: 1em;
   display: flex;
-  justify-content: space-around;
-  width: 200px; }
+  justify-content: center;
+  width: 100%; }
   @media screen and (max-width: 805px) {
     .social {
       margin: 2em 0; } }
   .social a {
+    margin: 1em;
     font-size: 2em;
     color: white; }
     .social a:hover {
@@ -102,6 +108,18 @@ body {
     .siteWrapper {
       max-width: 95%; } }
 
+.galleryPageWrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  flex-direction: column;
+  align-items: center; }
+  @media screen and (max-width: 630px) {
+    .galleryPageWrapper {
+      max-width: 95%; } }
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -118,8 +136,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80%;
+  align-items: flex-start;
+  max-width: 100%;
   color: white; }
+  .galleryList .galleryItem {
+    padding: 10px;
+    align-items: center;
+    flex: 1; }
+    @media screen and (max-width: 1150px) {
+      .galleryList .galleryItem {
+        flex: 0; } }
   .galleryList p {
     margin: 0;
     padding: 0; }
@@ -128,7 +154,15 @@ body {
     font-size: 1.2em; }
   .galleryList .composer, .galleryList .size, .galleryList .postedBy {
     font-size: .8em; }
-  .galleryList .galleryItem {
+
+.searchBar {
+  width: 550px;
+  flex: 1;
+  display: flex; }
+  .searchBar input[type="text"] {
+    padding: 10px;
+    flex: 3; }
+  .searchBar button {
     padding: 10px; }
 
 .searchWrapper {
@@ -139,6 +173,13 @@ body {
   width: 750px;
   padding-top: 50px;
   padding-bottom: 30px; }
+  @media screen and (max-width: 1150px) {
+    .searchWrapper {
+      padding: 0;
+      height: 250px;
+      flex-direction: column;
+      align-items: space-between;
+      margin-bottom: 1.4em; } }
   .searchWrapper p {
     color: white;
     margin-right: 8px; }
@@ -154,26 +195,26 @@ body {
     .searchWrapper .sortBy select {
       font-size: 0.65em;
       padding: 7px; }
+    @media screen and (max-width: 1150px) {
+      .searchWrapper .sortBy {
+        flex-direction: column; }
+        .searchWrapper .sortBy p {
+          margin: 0; } }
   .searchWrapper .showBy {
     display: flex;
     align-items: center; }
     .searchWrapper .showBy select {
       font-size: 0.65em;
       padding: 7px; }
+    @media screen and (max-width: 1150px) {
+      .searchWrapper .showBy {
+        flex-direction: column; }
+        .searchWrapper .showBy p {
+          margin: 0; } }
 
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; }
-
-.searchBar {
-  width: 550px;
-  flex: 1;
-  display: flex; }
-  .searchBar input[type="text"] {
-    padding: 10px;
-    flex: 3; }
-  .searchBar button {
-    padding: 10px; }
 
 /*# sourceMappingURL=styles.css.map */

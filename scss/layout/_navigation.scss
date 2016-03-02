@@ -12,6 +12,9 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  @media screen and #{$mobile} {
+    flex-direction: column;
+  }
   .navLinks {
     display: flex;
     justify-content: space-between;
@@ -49,14 +52,14 @@
 }
 
 .social {
-  margin-top: 1em;
   display: flex;
-  justify-content: space-around;
-  width: 200px;
+  justify-content: center;
+  width: 100%;
   @media screen and #{$tablet} {
     margin: 2em 0;
   }
   a {
+    margin: 1em;
     font-size: 2em;
     color: white;
     &:hover {
